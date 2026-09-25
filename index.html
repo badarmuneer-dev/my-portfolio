@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Badar Muneer — Junior Software Engineer & React Developer</title>
+  <meta name="description" content="Portfolio of Badar Muneer, a junior software engineer and React developer in Lahore, Pakistan building fast, accessible web interfaces.">
+  <meta name="author" content="Badar Muneer">
+  <meta property="og:title" content="Badar Muneer — Junior Software Engineer & React Developer">
+  <meta property="og:description" content="Portfolio of Badar Muneer, a junior software engineer and React developer in Lahore, Pakistan building fast, accessible web interfaces.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="scroll-progress" aria-hidden="true">
+    <div id="scroll-progress-bar"></div>
+  </div>
+
+  <div class="blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <span class="monogram" aria-hidden="true">BM</span>
+        <span class="brand-name">Badar Muneer</span>
+      </a>
+
+      <nav aria-label="Sections" class="desktop-nav">
+        <ul class="nav-list">
+          <li><a href="#about" data-section="about">About</a></li>
+          <li><a href="#experience" data-section="experience">Experience</a></li>
+          <li><a href="#skills" data-section="skills">Skills</a></li>
+          <li><a href="#projects" data-section="projects">Projects</a></li>
+          <li><a href="#education" data-section="education">Education</a></li>
+          <li><a href="#contact" data-section="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-ghost hidden-sm">Get in touch</a>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16" class="bar bar-1"></path>
+            <path d="M4 12h16" class="bar bar-2"></path>
+            <path d="M4 17h16" class="bar bar-3"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Sections">
+      <div class="container">
+        <ul class="mobile-nav-list">
+          <li><a href="#about" data-section="about">About</a></li>
+          <li><a href="#experience" data-section="experience">Experience</a></li>
+          <li><a href="#skills" data-section="skills">Skills</a></li>
+          <li><a href="#projects" data-section="projects">Projects</a></li>
+          <li><a href="#education" data-section="education">Education</a></li>
+          <li><a href="#contact" data-section="contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="reveal">
+              <span class="badge">
+                <span class="status-dot"></span>
+                Open to junior React roles & freelance work
+              </span>
+            </div>
+
+            <div class="reveal" style="transition-delay: 80ms;">
+              <h1 class="hero-title">
+                Badar Muneer
+                <span class="text-gradient">Junior Software Engineer & React Developer</span>
+              </h1>
+            </div>
+
+            <div class="reveal" style="transition-delay: 160ms;">
+              <p class="hero-lead">
+                I build responsive, accessible interfaces with React, JavaScript and Tailwind
+                CSS. Just over a year of hands-on work — freelance client sites and a
+                contract role — with a habit of keeping components simple and layouts
+                dependable on every screen size.
+              </p>
+            </div>
+
+            <div class="reveal" style="transition-delay: 240ms;">
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-gradient">View my work</a>
+                <a href="mailto:badarmuneer.dev@gmail.com" class="btn btn-ghost">Email me</a>
+                <a href="https://github.com/badarmuneer63" target="_blank" rel="noreferrer noopener" class="btn btn-ghost" aria-label="GitHub profile">GitHub</a>
+                <a href="https://www.linkedin.com/in/badar-muneer-2a141b359/" target="_blank" rel="noreferrer noopener" class="btn btn-ghost" aria-label="LinkedIn profile">LinkedIn</a>
+              </div>
+            </div>
+
+            <div class="reveal" style="transition-delay: 320ms;">
+              <dl class="stats">
+                <div class="stat-card">
+                  <dt class="sr-only">Years of experience</dt>
+                  <dd class="stat-value">1+</dd>
+                  <dd class="stat-label">Year building for the web</dd>
+                </div>
+                <div class="stat-card">
+                  <dt class="sr-only">Featured case studies</dt>
+                  <dd class="stat-value">3</dd>
+                  <dd class="stat-label">Featured case studies</dd>
+                </div>
+                <div class="stat-card">
+                  <dt class="sr-only">Location</dt>
+                  <dd class="stat-value">Lahore</dd>
+                  <dd class="stat-label">Based in Pakistan</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+
+          <div class="reveal" style="transition-delay: 200ms;">
+            <div class="profile-card-wrapper">
+              <div class="profile-card-glow"></div>
+              <div class="profile-card">
+                <span class="monogram monogram-lg" aria-hidden="true">BM</span>
+                <p class="profile-name">Badar Muneer</p>
+                <p class="profile-role">React Developer · Lahore, Pakistan</p>
+                <ul class="profile-meta">
+                  <li><span class="meta-label">Focus</span><span>Front-end / React</span></li>
+                  <li><span class="meta-label">Experience</span><span>1+ year</span></li>
+                  <li><span class="meta-label">Availability</span><span class="text-primary">Open</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2 class="section-title">Learning fast, shipping carefully</h2>
+          <p class="section-lead">I started building for the web because I liked seeing an idea become something people can click. Since then I've focused on React and clean, responsive layouts.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="reveal">
+            <div class="card">
+              <p class="card-body">I'm a junior software engineer based in Lahore, Pakistan. Most of my work so far has been front-end: translating designs into React components, wiring them to APIs, and making sure everything holds up on small screens. I care about readable code, honest naming and interfaces that don't fight the person using them.</p>
+            </div>
+          </div>
+          <div class="reveal" style="transition-delay: 100ms;">
+            <div class="card">
+              <p class="card-body">Day to day I'm strongest in React, JavaScript, HTML, CSS and Tailwind, with Git for version control. I'm still early in my career, so I ask questions, take review feedback seriously, and try to leave each project a little tidier than I found it.</p>
+              <ul class="list-rows">
+                <li><span class="text-muted">Location</span><span>Lahore, Pakistan</span></li>
+                <li><span class="text-muted">Role</span><span>Junior Software Engineer</span></li>
+                <li><span class="text-muted">Languages</span><span>English, Urdu</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Experience</p>
+          <h2 class="section-title">Where I've been working</h2>
+          <p class="section-lead">Freelance front-end work alongside a short contract role, both focused on building and maintaining real interfaces.</p>
+        </div>
+
+        <ol class="experience-list">
+          <li class="reveal">
+            <article class="card card-accent">
+              <div class="job-header">
+                <div>
+                  <h3 class="job-title">Front-End Developer (Freelance)</h3>
+                  <p class="job-org">Self-employed</p>
+                </div>
+                <div class="job-meta">
+                  <p>Jan 2024 — Present</p>
+                  <p class="text-small">Lahore, Pakistan · Remote</p>
+                </div>
+              </div>
+              <ul class="bullet-list">
+                <li>Build responsive websites and single-page apps for clients using React, JavaScript, HTML and CSS.</li>
+                <li>Turn design references into reusable components with consistent spacing, type and colour.</li>
+                <li>Work directly with clients to clarify requirements, share progress and handle revisions.</li>
+                <li>Test layouts across mobile, tablet and desktop widths, and fix cross-browser issues.</li>
+              </ul>
+            </article>
+          </li>
+          <li class="reveal" style="transition-delay: 90ms;">
+            <article class="card card-accent">
+              <div class="job-header">
+                <div>
+                  <h3 class="job-title">Junior Web Developer (Contract)</h3>
+                  <p class="job-org">Contract engagement</p>
+                </div>
+                <div class="job-meta">
+                  <p>Sep 2023 — Dec 2023</p>
+                  <p class="text-small">Lahore, Pakistan</p>
+                </div>
+              </div>
+              <ul class="bullet-list">
+                <li>Contributed front-end features to an existing web project alongside a small team.</li>
+                <li>Converted static pages into component-based views and connected them to REST APIs.</li>
+                <li>Fixed reported UI bugs and improved form validation and error states.</li>
+                <li>Used Git for day-to-day version control and code review feedback.</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skills</p>
+          <h2 class="section-title">Tools I reach for</h2>
+          <p class="section-lead">The stack I use most, grouped by how it shows up in my work.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <div class="reveal">
+            <div class="card card-full">
+              <h3 class="skill-title">Front-End</h3>
+              <ul class="tag-list">
+                <li>React.js</li>
+                <li>JavaScript (ES6+)</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Responsive design</li>
+              </ul>
+            </div>
+          </div>
+          <div class="reveal" style="transition-delay: 80ms;">
+            <div class="card card-full">
+              <h3 class="skill-title">Styling & UI</h3>
+              <ul class="tag-list">
+                <li>Tailwind CSS</li>
+                <li>Bootstrap</li>
+                <li>Component libraries</li>
+                <li>Accessibility basics</li>
+              </ul>
+            </div>
+          </div>
+          <div class="reveal" style="transition-delay: 160ms;">
+            <div class="card card-full">
+              <h3 class="skill-title">Tools & Workflow</h3>
+              <ul class="tag-list">
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+                <li>npm</li>
+                <li>REST APIs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="reveal" style="transition-delay: 240ms;">
+            <div class="card card-full">
+              <h3 class="skill-title">Ways of working</h3>
+              <ul class="tag-list">
+                <li>Debugging</li>
+                <li>Code reviews</li>
+                <li>Client communication</li>
+                <li>Problem solving</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Projects</p>
+          <h2 class="section-title">Selected case studies</h2>
+          <p class="section-lead">Three builds that show how I structure components, handle state and keep layouts responsive.</p>
+        </div>
+
+        <div class="projects-list">
+          <article class="reveal">
+            <div class="card project-card">
+              <div class="project-grid">
+                <div class="project-main">
+                  <p class="project-kind">Front-end case study</p>
+                  <h3 class="project-title">KFC Clone Website</h3>
+                  <p class="project-summary">A pixel-attentive recreation of a fast-food ordering interface, built to practise layout accuracy and component reuse.</p>
+                  <ul class="stack-list">
+                    <li>React</li>
+                    <li>JavaScript</li>
+                    <li>CSS3</li>
+                  </ul>
+                </div>
+                <div class="project-detail">
+                  <h4 class="project-detail-title">What it involved</h4>
+                  <ul class="bullet-list">
+                    <li>Menu grid, category filtering and cart interactions handled with React state.</li>
+                    <li>Responsive layout from a 320px phone up to wide desktop screens.</li>
+                    <li>Shared button, card and badge components to keep styling consistent.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="reveal" style="transition-delay: 90ms;">
+            <div class="card project-card">
+              <div class="project-grid">
+                <div class="project-main">
+                  <p class="project-kind">Product build</p>
+                  <h3 class="project-title">Task Manager App</h3>
+                  <p class="project-summary">A task tracker for creating, editing, completing and removing tasks, with data that survives a refresh.</p>
+                  <ul class="stack-list">
+                    <li>React</li>
+                    <li>Hooks</li>
+                    <li>Local storage</li>
+                  </ul>
+                </div>
+                <div class="project-detail">
+                  <h4 class="project-detail-title">What it involved</h4>
+                  <ul class="bullet-list">
+                    <li>Full create, update, complete and delete flow with controlled forms.</li>
+                    <li>Filtering between all, active and completed tasks.</li>
+                    <li>Persisted state in the browser so lists reload as the user left them.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="reveal" style="transition-delay: 180ms;">
+            <div class="card project-card">
+              <div class="project-grid">
+                <div class="project-main">
+                  <p class="project-kind">Personal site</p>
+                  <h3 class="project-title">Portfolio Website</h3>
+                  <p class="project-summary">A single-page personal site presenting work, experience and contact details with a calm dark interface.</p>
+                  <ul class="stack-list">
+                    <li>React</li>
+                    <li>Tailwind CSS</li>
+                    <li>Accessibility</li>
+                  </ul>
+                </div>
+                <div class="project-detail">
+                  <h4 class="project-detail-title">What it involved</h4>
+                  <ul class="bullet-list">
+                    <li>Sticky in-page navigation with an active-section indicator.</li>
+                    <li>Scroll-triggered reveals kept subtle and reduced-motion friendly.</li>
+                    <li>Semantic headings, labelled links and keyboard-visible focus states.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Education & certification</p>
+          <h2 class="section-title">How I learned this</h2>
+          <p class="section-lead">Formal studies plus focused self-directed coursework in modern front-end development.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="reveal">
+            <div class="card card-full">
+              <p class="text-muted text-small">Completed</p>
+              <h3 class="edu-title">Intermediate in Computer Science (ICS)</h3>
+              <p class="edu-org">Lahore, Pakistan</p>
+              <p class="card-body mt-4">Foundation in programming logic, mathematics and computing fundamentals.</p>
+            </div>
+          </div>
+          <div class="reveal" style="transition-delay: 90ms;">
+            <div class="card card-full">
+              <p class="text-muted text-small">2023</p>
+              <h3 class="edu-title">Front-End / React Development Certification</h3>
+              <p class="edu-org">Online certification course</p>
+              <p class="card-body mt-4">Hands-on coursework in modern JavaScript, React components, state and API integration.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="reveal">
+          <div class="contact-card">
+            <div class="contact-glow" aria-hidden="true"></div>
+            <div class="contact-content">
+              <p class="eyebrow">Contact</p>
+              <h2 class="section-title">Let's build something together</h2>
+              <p class="section-lead">I'm looking for junior React or front-end roles and open to freelance projects. The quickest way to reach me is email — I usually reply within a day.</p>
+              <div class="contact-actions">
+                <a href="mailto:badarmuneer.dev@gmail.com" class="btn btn-gradient">badarmuneer.dev@gmail.com</a>
+                <a href="https://github.com/badarmuneer63" target="_blank" rel="noreferrer noopener" class="btn btn-ghost" aria-label="GitHub profile">GitHub</a>
+                <a href="https://www.linkedin.com/in/badar-muneer-2a141b359/" target="_blank" rel="noreferrer noopener" class="btn btn-ghost" aria-label="LinkedIn profile">LinkedIn</a>
+              </div>
+              <p class="text-muted text-small mt-6">Based in Lahore, Pakistan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="monogram" aria-hidden="true">BM</span>
+        <span>© <span id="year"></span> Badar Muneer</span>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:badarmuneer.dev@gmail.com">Email</a>
+        <a href="https://github.com/badarmuneer63" target="_blank" rel="noreferrer noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/badar-muneer-2a141b359/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
